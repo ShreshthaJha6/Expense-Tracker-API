@@ -137,6 +137,38 @@ http://127.0.0.1:8000/redoc
 ```
 
 ---
+## Running with Docker
+
+### Build the image
+
+```bash
+docker build -t expense-tracker-api .
+```
+
+### Run the container
+
+```bash
+docker run -d -p 8000:8000 --name expense-api expense-tracker-api
+```
+
+### Stop the container
+
+```bash
+docker stop expense-api
+```
+
+### Remove the container
+
+```bash
+docker rm expense-api
+```
+
+The API will be available at:
+
+```
+http://localhost:8000/docs
+```
+---
 
 # Authentication Flow
 
@@ -223,10 +255,10 @@ GET /expenses?category=Food&search=pizza&sort_by=date&order=desc&skip=0&limit=5
 
 ```json
 {
-    "total_expenses": 5275,
-    "total_transactions": 18,
-    "highest_expense": 1200,
-    "average_expense": 293.06
+  "total_expenses": 3100,
+  "total_transactions": 4,
+  "highest_expense": 1500,
+  "average_expense": 775
 }
 ```
 

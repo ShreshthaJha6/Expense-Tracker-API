@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.py[cod]
+*.db
+
+.git
+.gitignore
+
+.vscode/
+.idea/
+
+.pytest_cache/
+.mypy_cache/
+
+.env
+
+Dockerfile.old
