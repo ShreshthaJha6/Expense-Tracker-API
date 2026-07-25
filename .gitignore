@@ -1,0 +1,15 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Database (optional)
+expense.db
+
+# IDE settings
+.vscode/
+
+# OS files
+.DS_Store
