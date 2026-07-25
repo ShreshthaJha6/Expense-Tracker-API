@@ -7,7 +7,7 @@ SECRET_KEY = "xxx"
 
 ALGORITHM = "xxx"
 
-ACCESS_TOKEN_EXPIRE_MINUTES = 0
+ACCESS_TOKEN_EXPIRE_MINUTES = 10
 
 pwd_context = CryptContext(
     schemes=["bcrypt"],
